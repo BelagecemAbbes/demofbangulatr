@@ -1,10 +1,10 @@
 <div class="flex justify-center">
-    <form (ngSubmit)="submit()" 
+    <form (submit)="submit()"
     #myForm="ngForm"
     class="p-4 mt-20 rounded-lg border m-auto w-1/3">
     <h1 class="text-center text-xl">Register</h1>
 
-    
+
     <div class="my-5 w-full">
         <input type="email" id="email"
         class="p-2 rounded w-full border text-sm"
@@ -42,7 +42,7 @@
         <button type="submit"
         class="p-2 w-full bg-purple-700 cursor-pointer text-white hover:bg-purple-700 rounded"
         [disabled]="myForm.form.invalid">
-        
+
         <ng-container *ngIf="isLoading()">
             Loading...
         </ng-container>
@@ -57,5 +57,5 @@
 
 
 </form>
-   
+
  </div>

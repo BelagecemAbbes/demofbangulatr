@@ -19,17 +19,17 @@ export class RegisterComponent implements OnInit{
    passwordMatched: boolean = true;
 
 
-   
+
 
    constructor(private authService: AuthService){}
    ngOnInit(): void {
-     
+
    }
    submit(){
     console.log(this.form);
-    
+
    this.authService.register(this.form);
-      
+
   }
 
   isLoading(){

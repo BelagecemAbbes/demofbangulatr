@@ -1,6 +1,5 @@
 import { Component ,OnInit} from '@angular/core';
-import { firebaseConfig } from './firebase.config';
-import { initializeApp } from 'firebase/app';
+// import { initializeApp } from 'firebase/app';
 import { AuthService } from './auth/auth.service';
 
 
@@ -18,7 +17,7 @@ export class AppComponent implements OnInit{
   title = 'demofbangular';
 
 ngOnInit():void {
-  initializeApp(firebaseConfig)
+  // initializeApp(firebaseConfig)
 }
 
 isAuthenticated(){

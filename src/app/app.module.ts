@@ -14,6 +14,7 @@ import { ManageComponent } from './manage/manage.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environements/environements';
 import { AuthModule } from './auth/auth.module';
+import { AuthService } from './auth/auth.service';
 
 
 @NgModule({
